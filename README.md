@@ -59,7 +59,7 @@ Login to DC-1 and install Active Directory Domain Services. Promote as a DC: Set
 <br />
 
 <p>
-<img src="https://imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/rfoceHO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 In Active Directory Users and computers (ADUC) create two Organizational Units (OU). Then create a new employee with a username and password. Add the new employee to the "Domain Admins" Security Group. Log out/close the Remote Desktop connection to DC-1 and log back in as "mydomain.com\employee"
@@ -67,7 +67,7 @@ In Active Directory Users and computers (ADUC) create two Organizational Units (
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/QcjQaku.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 To join Client-1 to your domain, first, from Azure portal, set Client-1's DNS settings to the DC's Private IP address. In Azure Portal, restart Client-1. Next login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart). Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the "computers" container on the root of the domain. Create a new OU and drag Client-1 into there. 
@@ -75,7 +75,7 @@ To join Client-1 to your domain, first, from Azure portal, set Client-1's DNS se
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/X7OdHap.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 To setup Remote Desktop for non-administrative users on Client-1, log into Client-1 as mydomain.com\employee and open system properties. Click "Remote Desktop". Allow "domain users" access to remote desktop. You can now log into Client-1 as a normal, non-admin user now. Normailly you would want to do this with Group Policy that allows to change many systems at once. 
