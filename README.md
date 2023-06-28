@@ -51,7 +51,7 @@ Next thing would be to login to Client-1 and ping DC-1’s private IP address wi
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/4oTzm3j.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Login to DC-1 and install Active Directory Domain Services. Promote as a DC: Setup a new forest as mydomain.com. Next, restart and then log back into the DC 
@@ -59,7 +59,7 @@ Login to DC-1 and install Active Directory Domain Services. Promote as a DC: Set
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 In Active Directory Users and computers (ADUC) create two Organizational Units (OU). Then create a new employee with a username and password. Add the new employee to the "Domain Admins" Security Group. Log out/close the Remote Desktop connection to DC-1 and log back in as "mydomain.com\employee"
